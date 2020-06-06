@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portada</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main1.css'>
+    <link rel="stylesheet" href="https://lxrd17.github.io/developers/fonts/fonts.css" type="text/css" media="all"/>
+    <link rel="shortcut icon" href="assets/image/R&X.png" type="image/x-icon">
+    <script src="assets/js/slim.min.js"></script>
+    <script src="assets/js/twee.min.js"></script>
+</head>
+<body>
+    <main class="main">
+        <section class="bg">
+            <img src="assets/image/bg.jfif" alt="">
+        </section>
+        <div class="logo">
+            <img src="assets/image/R&X.png" alt="">
+        </div>
+       <div class="navigation-wrapper">
+        <div class="navigation">
+            <div class="navigation-item">
+                <div class="nofex">
+                    <span data-text="NOFEX" class="fill">NOFEX 
+                        <span data-text="nofex">nofex</span></span>
+                </div>
+            </div>
+            <div class="boy">
+                <h1 class="wrong">BOY & GIRL</h1>
+                <span data-text="" class="wrong1">boy & girl</span>
+            </div>
+        </div>
+       </div>
+       <div class="barcode">
+           <img src="assets/image/bar.png" alt="">
+       </div>
+       <div class="progressbar"></div>
+    </main>
+    <script>
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop(),
+          dh = $(document).height(),
+          wh = $(window).height();
+        scrollPercent = (scroll / (dh - wh)) * 100;
+        $(".progressbar").css("height", scrollPercent + "%");
+      });
+    </script>
+</body>
+</html>
