@@ -48,7 +48,6 @@ span {
     content: attr(data-text);
     transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
   }
-  
   .navigation span:hover:before {
     width: 100%;
   }
@@ -140,36 +139,39 @@ span {
 }
 @media only screen and (max-width: 500px){
     body{
-        width: 100%;;
+        position: fixed;
+        width: fit-content;
+        width: 110%;
     }
     .main{
-        width: 100%;
-        background-size: 100%;
+        padding-left: 190px;
+        width: 110%;
+        height: 100%;
+        overflow-y: hidden;
     }
+    .navigation{
+        display: block;
+        user-select: none;
+        margin: 0px 0;
+      }
+      
     .bg{
         position: absolute;
         top: 50%;
-        left: 25%;
+        left: 20%;
         transform: translate(-50%, -50%);
     }
     .bg img{
         width: 500px;
     }
     .logo{
-        position: absolute;
-        top: 10%;
-        left: 88%;
-        transform: translate(-50%, -50%);
-    }
-    .logo img{
-        width: 90px;
-        opacity: 40%;
+        display: none;
     }
     .wrong1{
         color: #d3cccc;
         position: absolute;
         top: 75%;
-        left: 25%;
+        left: 15%;
         transform: translate(-50%, -50%);
         transform: rotate(180deg);
         transition: 0.3s;
@@ -185,7 +187,7 @@ span {
     .fill{
         position: absolute;
         top: 25%;
-        left: 80%;
+        left: 75%;
         transform: translate(-50%, -50%);
         transform: rotate(90deg);
     }
@@ -195,7 +197,7 @@ span {
     .barcode{
         position: absolute;
         top: 90%;
-        left: 73%;
+        left: 13%;
         transform: translate(-50%, -50%);    
     }
 
